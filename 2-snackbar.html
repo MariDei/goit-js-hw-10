@@ -4,6 +4,12 @@
     <meta charset="UTF-8" />
     <meta http-equiv="X-UA-Compatible" content="IE=edge" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Montserrat:wght@100..900&display=swap"
+      rel="stylesheet"
+    />
     
     
     
@@ -11,8 +17,8 @@
     <script type="module" crossorigin src="/goit-js-hw-10/assets/modulepreload-polyfill-3cfb730f.js"></script>
     <script type="module" crossorigin src="/goit-js-hw-10/assets/vendor-94c342ae.js"></script>
     <link rel="stylesheet" href="/goit-js-hw-10/assets/vendor-7a007824.css">
-    <link rel="stylesheet" href="/goit-js-hw-10/assets/1-timer-e3b0c442.css">
-    <link rel="stylesheet" href="/goit-js-hw-10/assets/styles-c9db6b34.css">
+    <link rel="stylesheet" href="/goit-js-hw-10/assets/2-snackbar-b12b22fe.css">
+    <link rel="stylesheet" href="/goit-js-hw-10/assets/styles-c357ef18.css">
   </head>
   <body>
     <section>
@@ -20,6 +26,26 @@
         <button class="back-btn" type="button">Go back</button>
       </a>
     </section>
+    <form class="form">
+      <label>
+        Delay (ms)
+        <input type="number" name="delay" required />
+      </label>
+
+      <fieldset>
+        <legend>State</legend>
+        <label>
+          <input type="radio" name="state" value="fulfilled" required />
+          Fulfilled
+        </label>
+        <label>
+          <input type="radio" name="state" value="rejected" required />
+          Rejected
+        </label>
+      </fieldset>
+
+      <button type="submit">Create notification</button>
+    </form>
 
     
   </body>
