@@ -1,72 +1,4 @@
 /* Snackbar */
-/* 
-
-.form input {
-  margin: 8px 0;
-  padding: 8px 16px;
-  width: 360px;
-  height: 40px;
-  display: flex;
-  flex-direction: column;
-  border: 1px solid #808080;
-  border-radius: 4px;
-  transition: border-color 250ms cubic-bezier(0.4, 0, 0.2, 1);
-}
-
-.form input:hover {
-  border-color: #000;
-}
-
-.form input:focus {
-  border-color: #4e75ff;
-}
-
-fieldset {
-  width: 360px;
-  height: 78px;
-  padding-left: 48px;
-  padding-right: 48px;
-  display: flex;
-  justify-content: space-between;
-  border-radius: 4px;
-  border: 1px solid #808080;
-  transition: border-color 250ms cubic-bezier(0.4, 0, 0.2, 1);
-}
-
-fieldset:hover {
-  border-color: #000;
-}
-
-fieldset label {
-  color: #2e2f42;
-  display: inline;
-}
-fieldset input {
-  border: 1px solid #000;
-  border-radius: 14px;
-  width: 20px;
-  height: 20px;
-}
-
-.form button {
-  margin-top: 24px;
-  width: 360px;
-  height: 40px;
-  padding: 8px 16px;
-  font-weight: 500;
-  color: #fff;
-  background: #4e75ff;
-  border: none;
-  border-radius: 8px;
-  cursor: pointer;
-  transition: background-color 250ms cubic-bezier(0.4, 0, 0.2, 1);
-}
-
-.form button:hover,
-.form button:focus {
-  background-color: #6c8cff;
-} */
-
 .form {
   margin: 24px 8px;
   width: 360px;
@@ -78,36 +10,37 @@ label {
   gap: 8px;
 }
 
-.form input {
+input {
   margin: 8px 0;
   padding-right: 16px;
   padding-left: 16px;
   height: 40px;
   border: 1px solid #808080;
   border-radius: 4px;
-  transition: border-color 250ms cubic-bezier(0.4, 0, 0.2, 1);
+  transition: border 250ms cubic-bezier(0.4, 0, 0.2, 1);
 }
 
-.form input:hover {
-  border-color: #000;
+input:hover {
+  border: 1px solid #000;
 }
 
-.form input:focus {
-  border-color: #4e75ff;
+input:focus {
+  border: 1px solid #4e75ff;
 }
 
 fieldset {
   padding-left: 48px;
   padding-right: 48px;
+
   display: flex;
   justify-content: space-between;
   border-radius: 4px;
   border: 1px solid #808080;
-  transition: border-color 250ms cubic-bezier(0.4, 0, 0.2, 1);
+  transition: border 250ms cubic-bezier(0.4, 0, 0.2, 1);
 }
 
 fieldset:hover {
-  border-color: #000;
+  border: 1px solid #000;
 }
 
 fieldset label {
@@ -124,9 +57,16 @@ fieldset input {
 
 fieldset input:hover {
   border: 1px solid #000;
+  background-color: #4e75ff;
+}
+
+fieldset input:focus {
+  border: 1px solid #4e75ff;
+  background-color: #4e75ff;
 }
 
 .form button {
+  font-family: 'Montserrat', sans-serif;
   margin-top: 24px;
   width: 360px;
   height: 40px;
